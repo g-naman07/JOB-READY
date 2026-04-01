@@ -1,6 +1,8 @@
 import axios from "axios"
+import { API_BASE_URL } from "../../../services/api"
+
 const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: API_BASE_URL,
     withCredentials: true  //server has access to the cookie and can set cookie in the browser
 })
 
